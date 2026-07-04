@@ -5,6 +5,9 @@ from fastapi import Query
 from app.medical_assistant import medical_assistant
 from app.data_analyst import data_analyst
 from app.business_consultant import business_consultant
+from app.analytics import get_report_context
+from app.ai_assistant import generate_response
+
 class AIRequest(BaseModel):
 
     assistant: str
@@ -27,7 +30,10 @@ app = FastAPI(title="PharmaInsight API")
 # Allow React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://pharma-insight-ai.vercel.app/",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -164,8 +170,7 @@ def reports():
 
     return get_report_data()
 
-from app.analytics import get_report_context
-from app.ai_assistant import generate_response
+
 
 
 @app.post("/reports/generate")
