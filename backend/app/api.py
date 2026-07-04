@@ -53,10 +53,12 @@ from app.analytics import (
 )
 
 
+from fastapi.responses import JSONResponse
+
 @app.get("/")
+@app.head("/")
 def root():
     return {"message": "PharmaInsight API Running"}
-
 
 @app.get("/dashboard/kpis")
 def dashboard():
