@@ -30,11 +30,8 @@ app = FastAPI(title="PharmaInsight API")
 # Allow React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://your-exact-vercel-url.vercel.app",  # ← replace this
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
