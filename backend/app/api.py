@@ -55,8 +55,7 @@ from app.analytics import (
 
 from fastapi.responses import JSONResponse
 
-@app.get("/")
-@app.head("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def root():
     return {"message": "PharmaInsight API Running"}
 
