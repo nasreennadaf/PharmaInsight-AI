@@ -105,126 +105,76 @@ function CompareDrugs() {
         </p>
 
       </div>
+{/* ================= SELECTORS ================= */}
 
-      {/* ================= SELECTORS ================= */}
+<div className="flex items-center justify-center gap-8 mb-12 flex-col lg:flex-row">
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
+  {/* Drug A */}
 
-        {/* Drug 1 */}
+  <div className="w-full lg:w-[42%] rounded-3xl bg-white/5 border border-white/10 p-8">
 
-        <div className="rounded-3xl bg-white/5 border border-white/10 p-8">
+    <h3 className="text-xl font-bold mb-5">
+      Drug A
+    </h3>
 
-          <h3 className="text-xl font-bold mb-5">
+    <select
+      value={drug1}
+      onChange={(e) => setDrug1(e.target.value)}
+      className="w-full bg-[#181818] border border-white/10 rounded-xl p-4 text-white outline-none focus:border-cyan-400 transition"
+    >
+      {drugs.map((drug) => (
+        <option key={drug} value={drug}>
+          {drug}
+        </option>
+      ))}
+    </select>
 
-            Drug A
+  </div>
 
-          </h3>
+  {/* VS */}
 
-          <select
+  <div className="flex justify-center items-center shrink-0">
 
-            value={drug1}
+    <div className="w-20 h-20 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center shadow-2xl shadow-cyan-500/20">
 
-            onChange={(e)=>setDrug1(e.target.value)}
+      <span className="text-2xl font-black tracking-widest text-white">
+        VS
+      </span>
 
-            className="w-full bg-[#181818] border border-white/10 rounded-xl p-4"
+    </div>
 
-          >
+  </div>
 
-            {
+  {/* Drug B */}
 
-              drugs.map(drug=>(
+  <div className="w-full lg:w-[42%] rounded-3xl bg-white/5 border border-white/10 p-8">
 
-                <option
+    <h3 className="text-xl font-bold mb-5">
+      Drug B
+    </h3>
 
-                  key={drug}
+    <select
+      value={drug2}
+      onChange={(e) => setDrug2(e.target.value)}
+      className="w-full bg-[#181818] border border-white/10 rounded-xl p-4 text-white outline-none focus:border-cyan-400 transition"
+    >
+      {drugs.map((drug) => (
+        <option key={drug} value={drug}>
+          {drug}
+        </option>
+      ))}
+    </select>
 
-                  value={drug}
+  </div>
 
-                >
+</div>
 
-                  {drug}
-
-                </option>
-
-              ))
-
-            }
-
-          </select>
-
-        </div>
-
-        {/* VS */}
-
-        <div className="flex items-center justify-center">
-
-          <div className="w-24 h-24 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center text-3xl font-black shadow-xl">
-
-            VS
-
-          </div>
-
-        </div>
-
-        {/* Drug 2 */}
-
-        <div className="rounded-3xl bg-white/5 border border-white/10 p-8">
-
-          <h3 className="text-xl font-bold mb-5">
-
-            Drug B
-
-          </h3>
-
-          <select
-
-            value={drug2}
-
-            onChange={(e)=>setDrug2(e.target.value)}
-
-            className="w-full bg-[#181818] border border-white/10 rounded-xl p-4"
-
-          >
-
-            {
-
-              drugs.map(drug=>(
-
-                <option
-
-                  key={drug}
-
-                  value={drug}
-
-                >
-
-                  {drug}
-
-                </option>
-
-              ))
-
-            }
-
-          </select>
-
-        </div>
-
-      </div>
-
-      {
-
-        loading ?
-
-        (
-
-          <div className="text-center text-gray-400 py-20">
-
-            Loading...
-
-          </div>
-
-        )
+{
+  loading ? (
+    <div className="text-center text-gray-400 py-20">
+      Loading...
+    </div>
+  ) 
 
         :
 
