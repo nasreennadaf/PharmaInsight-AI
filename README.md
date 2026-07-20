@@ -130,7 +130,7 @@ GEMINI_API_KEY=your_gemini_api_key
 
 ## Dataset
 
-Based on the [UCI Drug Review Dataset](https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29) containing patient reviews for drugs across hundreds of medical conditions.
+Based on the [UCI Drug Review Dataset](https://www.kaggle.com/datasets/jessicali9530/kuc-hackathon-winter-2018) containing patient reviews for drugs across hundreds of medical conditions.
 
 - 159,000+ patient reviews
 - 3,400+ unique drugs
