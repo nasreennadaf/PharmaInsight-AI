@@ -7,7 +7,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 @lru_cache(maxsize=1)
 def get_dataframe():
     path = BASE_DIR / "data" / "processed" / "cleaned_drugs.csv"
-    return pd.read_csv(path)
+    df = pd.read_csv(path)
+    
     df = df.dropna(subset=["condition"])
 
     df = df[
