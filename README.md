@@ -43,34 +43,39 @@ PharmaInsight AI analyzes 159,000+ patient drug reviews across 3,400+ drugs and 
 ---
 
 ## Project Structure
+
+```text
 pharmainsight/
 ├── frontend-app/
-│ ├── src/
-│ │ ├── pages/
-│ │ │ ├── Landing.jsx
-│ │ │ ├── Dashboard.jsx
-│ │ │ ├── DrugExplorer.jsx
-│ │ │ ├── CompareDrugs.jsx
-│ │ │ ├── AICenter.jsx
-│ │ │ ├── MarketIntelligence.jsx
-│ │ │ ├── Reports.jsx
-│ │ │ └── About.jsx
-│ │ ├── components/
-│ │ │ └── Navbar.jsx
-│ │ └── services/
-│ │ └── api.js
-│ └── public/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Landing.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── DrugExplorer.jsx
+│   │   │   ├── CompareDrugs.jsx
+│   │   │   ├── AICenter.jsx
+│   │   │   ├── MarketIntelligence.jsx
+│   │   │   ├── Reports.jsx
+│   │   │   └── About.jsx
+│   │   ├── components/
+│   │   │   └── Navbar.jsx
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   └── ...
+│   └── public/
+│
 └── backend/
-├── app/
-│ ├── api.py
-│ ├── analytics.py
-│ ├── data_service.py
-│ ├── medical_assistant.py
-│ ├── data_analyst.py
-│ └── business_consultant.py
-└── data/
-└── processed/
-└── cleaned_drugs.csv
+    ├── app/
+    │   ├── api.py
+    │   ├── analytics.py
+    │   ├── data_service.py
+    │   ├── medical_assistant.py
+    │   ├── data_analyst.py
+    │   └── business_consultant.py
+    └── data/
+        └── processed/
+            └── cleaned_drugs.csv
+```
 ---
 
 ## Getting Started
