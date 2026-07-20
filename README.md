@@ -157,9 +157,25 @@ Based on the [UCI Drug Review Dataset](https://www.kaggle.com/datasets/jessicali
 
 ---
 
-## Screenshots
+# 📸 Application Preview
 
-> Dashboard · Drug Explorer · AI Center · Report Studio
+| Home | Dashboard |
+|------|-----------|
+| <img src="screenshots/Home_page.png" width="100%"> | <img src="screenshots/dashboard.png" width="100%"> |
+
+| Drug Explorer | Compare Drugs |
+|---------------|---------------|
+| <img src="screenshots/drug_explore.png" width="100%"> | <img src="screenshots/Compare_drugs.png" width="100%"> |
+
+| AI Centre | Report Studio |
+|-----------|---------------|
+| <img src="screenshots/AI_Centre.png" width="100%"> | <img src="screenshots/report.png" width="100%"> |
+
+### AI Report Example
+
+<p align="center">
+<img src="screenshots/report_1.png" width="90%">
+</p>
 
 ---
 
