@@ -22,3 +22,5 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+# Sentiment model training environment
+.venv-sentiment/

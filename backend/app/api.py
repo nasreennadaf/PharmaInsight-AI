@@ -7,6 +7,7 @@ from app.data_analyst import data_analyst
 from app.business_consultant import business_consultant
 from app.analytics import get_report_context
 from app.ai_assistant import generate_response
+from app.sentiment_service import predict_sentiment
 
 class AIRequest(BaseModel):
 
@@ -24,6 +25,9 @@ class ReportRequest(BaseModel):
 
     instructions:str=""
 
+class SentimentRequest(BaseModel):
+
+    review: str
 
 app = FastAPI(title="PharmaInsight API")
 
@@ -249,7 +253,23 @@ Use only supplied context.
 
     }
 
+@app.post("/sentiment/analyze")
+def analyze_sentiment(request: SentimentRequest):
 
+    if not request.review.strip():
+        return {
+            "error": "Review cannot be empty"
+        }
+
+    try:
+        result = predict_sentiment(request.review)
+
+        return result
+
+    except Exception as e:
+        return {
+            "error": str(e)
+        }
 
 
 

@@ -1,0 +1,10 @@
+{
+    "max_words": 20000,
+    "max_length": 160,
+    "labels": {
+        "0": "Negative",
+        "1": "Neutral",
+        "2": "Positive"
+    },
+    "label_source": "Rating-derived: 1-4 Negative, 5-6 Neutral, 7-10 Positive"
+}

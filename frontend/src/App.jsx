@@ -10,6 +10,7 @@ import AICenter from "./pages/AICenter";
 import MarketIntelligence from "./pages/MarketIntelligence";
 import Reports from "./pages/Reports";
 import About from "./pages/About";
+import CustomerSentiment from "./pages/CustomerSentiment";
 
 function Layout() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function Layout() {
         <Route path="/market-intelligence" element={<MarketIntelligence />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/about" element={<About />} />
+        <Route path="/sentiment" element={<CustomerSentiment />} />
       </Routes>
     </>
   );

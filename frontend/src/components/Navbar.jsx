@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { label: "Drug Explorer", path: "/drug-explorer" },
   { label: "Compare Drugs", path: "/compare-drugs" },
   { label: "AI Center", path: "/ai-center" },
+  { label: "Customer Sentiment", path: "/sentiment" },
   { label: "Reports", path: "/reports" },
 ];
 
