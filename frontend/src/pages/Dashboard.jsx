@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import {
   FaHome, FaChartBar, FaFlask, FaBalanceScale,
   FaRobot, FaChartLine, FaFileAlt, FaInfoCircle, FaCheckCircle, FaStar,
+  FaCommentDots,
 } from "react-icons/fa";
 import api from "../services/api";
 
@@ -12,6 +13,7 @@ const sidebarItems = [
   { label: "Drug Explorer",       path: "/drug-explorer",       icon: <FaFlask /> },
   { label: "Compare Drugs",       path: "/compare-drugs",       icon: <FaBalanceScale /> },
   { label: "AI Center",           path: "/ai-center",           icon: <FaRobot /> },
+  { label: "Customer Sentiment",  path: "/sentiment",           icon: <FaCommentDots /> },
   { label: "Market Intelligence", path: "/market-intelligence", icon: <FaChartLine /> },
   { label: "Reports",             path: "/reports",             icon: <FaFileAlt /> },
   { label: "About",               path: "/about",               icon: <FaInfoCircle /> },
