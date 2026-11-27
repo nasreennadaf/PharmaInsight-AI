@@ -52,7 +52,7 @@ export default function CustomerSentiment() {
         },
         {
             label: "Neutral Review",
-            text: "The medication was okay. It did not help much, but it was not bad either."
+            text: "I have mixed feelings about this medication. The results were moderate."
         }
     ];
 
